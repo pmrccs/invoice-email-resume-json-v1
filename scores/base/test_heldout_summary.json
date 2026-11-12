@@ -1,0 +1,162 @@
+{
+ "lenient": {
+  "precision": 0.6190005994992418,
+  "recall": 0.6833949776133931,
+  "f1": 0.6496058621072499,
+  "f1_lo": 0.6378011623108019,
+  "f1_hi": 0.6606416789502518,
+  "doc_em_pct": 1.2666666666666666
+ },
+ "strict": {
+  "precision": 0.6190005994992418,
+  "recall": 0.6833949776133931,
+  "f1": 0.6496058621072499,
+  "f1_lo": 0.6376287194371073,
+  "f1_hi": 0.6603267515361946,
+  "doc_em_pct": 1.2666666666666666
+ },
+ "strict_valid_json_pct": 99.93333333333334,
+ "lenient_valid_json_pct": 99.93333333333334,
+ "truncated_pct": 0.0,
+ "null_hallucination_pct": 77.98555036124097,
+ "errors": {
+  "hallucinated": 4512,
+  "wrong": 4406,
+  "missing": 2861,
+  "missing_row": 831,
+  "extra_row": 1527,
+  "extra_key": 112,
+  "type": 12,
+  "unparsable_doc_fields": 22
+ },
+ "domains": {
+  "email": {
+   "n": 450,
+   "f1": 0.5749454040103236,
+   "f1_lo": 0.5624926881923035,
+   "f1_hi": 0.588452264380441,
+   "doc_em_pct": 0.0
+  },
+  "invoice": {
+   "n": 600,
+   "f1": 0.8095319879776728,
+   "f1_lo": 0.7971257647289619,
+   "f1_hi": 0.8205661045076174,
+   "doc_em_pct": 2.6666666666666665
+  },
+  "resume": {
+   "n": 450,
+   "f1": 0.5058516297514266,
+   "f1_lo": 0.49059171336230134,
+   "f1_hi": 0.5219940907790912,
+   "doc_em_pct": 0.6666666666666666
+  }
+ },
+ "worst_fields": [
+  {
+   "field": "email.?str",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "email.cc[]",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "email.date",
+   "tp": 0,
+   "fp": 396,
+   "fn": 379,
+   "f1": 0.0
+  },
+  {
+   "field": "email.meeting",
+   "tp": 0,
+   "fp": 483,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "email.meeting.start",
+   "tp": 0,
+   "fp": 136,
+   "fn": 136,
+   "f1": 0.0
+  },
+  {
+   "field": "email.to[]",
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.?net_amount",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.?sales_tax",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.?total_amount",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.?vats",
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.buyer.?city",
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.buyer.?postcode",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.buyer.?suite",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.buyer.?tax_id",
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "f1": 0.0
+  },
+  {
+   "field": "invoice.items[].?amount_before_tax",
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "f1": 0.0
+  }
+ ]
+}
