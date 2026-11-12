@@ -54,31 +54,10 @@
  },
  "worst_fields": [
   {
-   "field": "email.?str",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
-  },
-  {
-   "field": "email.cc[]",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
-  },
-  {
    "field": "email.date",
    "tp": 0,
    "fp": 396,
    "fn": 379,
-   "f1": 0.0
-  },
-  {
-   "field": "email.meeting",
-   "tp": 0,
-   "fp": 483,
-   "fn": 0,
    "f1": 0.0
   },
   {
@@ -89,74 +68,130 @@
    "f1": 0.0
   },
   {
-   "field": "email.to[]",
+   "field": "resume.skills[]",
    "tp": 0,
-   "fp": 5,
-   "fn": 0,
+   "fp": 2684,
+   "fn": 2763,
    "f1": 0.0
   },
   {
-   "field": "invoice.?net_amount",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "email.action_items[].owner",
+   "tp": 56,
+   "fp": 321,
+   "fn": 52,
+   "f1": 0.2309278350515464
   },
   {
-   "field": "invoice.?sales_tax",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "email.action_items[].due",
+   "tp": 77,
+   "fp": 302,
+   "fn": 23,
+   "f1": 0.32150313152400833
   },
   {
-   "field": "invoice.?total_amount",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "email.intent",
+   "tp": 142,
+   "fp": 243,
+   "fn": 243,
+   "f1": 0.36883116883116884
   },
   {
-   "field": "invoice.?vats",
-   "tp": 0,
-   "fp": 2,
-   "fn": 0,
-   "f1": 0.0
+   "field": "invoice.seller.address",
+   "tp": 151,
+   "fp": 273,
+   "fn": 239,
+   "f1": 0.371007371007371
   },
   {
-   "field": "invoice.buyer.?city",
-   "tp": 0,
-   "fp": 2,
-   "fn": 0,
-   "f1": 0.0
+   "field": "email.action_items[].task",
+   "tp": 131,
+   "fp": 286,
+   "fn": 100,
+   "f1": 0.404320987654321
   },
   {
-   "field": "invoice.buyer.?postcode",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "resume.experience[].end",
+   "tp": 321,
+   "fp": 497,
+   "fn": 422,
+   "f1": 0.41127482383087766
   },
   {
-   "field": "invoice.buyer.?suite",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "resume.experience[].is_current",
+   "tp": 368,
+   "fp": 444,
+   "fn": 514,
+   "f1": 0.4344746162927981
   },
   {
-   "field": "invoice.buyer.?tax_id",
-   "tp": 0,
-   "fp": 1,
-   "fn": 0,
-   "f1": 0.0
+   "field": "resume.education[].degree",
+   "tp": 233,
+   "fp": 317,
+   "fn": 272,
+   "f1": 0.44170616113744077
   },
   {
-   "field": "invoice.items[].?amount_before_tax",
-   "tp": 0,
-   "fp": 2,
-   "fn": 0,
-   "f1": 0.0
+   "field": "resume.experience[].start",
+   "tp": 400,
+   "fp": 446,
+   "fn": 508,
+   "f1": 0.45610034207525657
+  },
+  {
+   "field": "invoice.buyer.address",
+   "tp": 195,
+   "fp": 245,
+   "fn": 214,
+   "f1": 0.45936395759717313
+  },
+  {
+   "field": "invoice.due_date",
+   "tp": 198,
+   "fp": 210,
+   "fn": 164,
+   "f1": 0.5142857142857142
+  },
+  {
+   "field": "invoice.issue_date",
+   "tp": 269,
+   "fp": 221,
+   "fn": 204,
+   "f1": 0.5586708203530634
+  },
+  {
+   "field": "email.cc[].email",
+   "tp": 149,
+   "fp": 178,
+   "fn": 46,
+   "f1": 0.5708812260536399
+  },
+  {
+   "field": "invoice.seller.tax_id",
+   "tp": 148,
+   "fp": 159,
+   "fn": 40,
+   "f1": 0.597979797979798
+  },
+  {
+   "field": "resume.education[].field",
+   "tp": 253,
+   "fp": 247,
+   "fn": 58,
+   "f1": 0.623921085080148
+  },
+  {
+   "field": "email.cc[].name",
+   "tp": 217,
+   "fp": 154,
+   "fn": 31,
+   "f1": 0.7011308562197092
+  },
+  {
+   "field": "email.to[].email",
+   "tp": 453,
+   "fp": 249,
+   "fn": 96,
+   "f1": 0.7242206235011991
   }
  ]
 }
