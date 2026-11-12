@@ -1,0 +1,22 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "adapter": "",
+ "dataset": "pmrccs/invoice-email-resume-json-v1",
+ "dataset_sha": "b266602f302094331a88b276e231ccd9d0b48218",
+ "splits": [
+  "test_heldout"
+ ],
+ "thinking": false,
+ "max_new_tokens": 1024,
+ "batch_size": 16,
+ "test_run": true,
+ "versions": {
+  "torch": "2.11.0+cu130",
+  "transformers": "5.20.2"
+ },
+ "gpus": [
+  "Tesla T4",
+  "Tesla T4"
+ ],
+ "started_utc": "2026-11-12T08:13:35.940366+00:00"
+}
