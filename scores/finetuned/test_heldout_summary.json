@@ -1,0 +1,194 @@
+{
+ "lenient": {
+  "precision": 0.9870858180956519,
+  "recall": 0.9730971384076309,
+  "f1": 0.9800415637375995,
+  "f1_lo": 0.9765096452836864,
+  "f1_hi": 0.9831682144953959,
+  "doc_em_pct": 82.06666666666666
+ },
+ "strict": {
+  "precision": 0.9870858180956519,
+  "recall": 0.9730971384076309,
+  "f1": 0.9800415637375995,
+  "f1_lo": 0.976565748793271,
+  "f1_hi": 0.9830113873958797,
+  "doc_em_pct": 82.06666666666666
+ },
+ "strict_valid_json_pct": 100.0,
+ "lenient_valid_json_pct": 100.0,
+ "truncated_pct": 0.0,
+ "null_hallucination_pct": 1.363818692338548,
+ "errors": {
+  "missing": 155,
+  "hallucinated": 102,
+  "wrong": 112,
+  "missing_row": 424,
+  "extra_row": 113
+ },
+ "domains": {
+  "email": {
+   "n": 450,
+   "f1": 0.9871541501976284,
+   "f1_lo": 0.9840749145408386,
+   "f1_hi": 0.9898844632767733,
+   "doc_em_pct": 84.88888888888889
+  },
+  "invoice": {
+   "n": 600,
+   "f1": 0.9953451607236957,
+   "f1_lo": 0.9935086282812764,
+   "f1_hi": 0.9969921491946562,
+   "doc_em_pct": 93.5
+  },
+  "resume": {
+   "n": 450,
+   "f1": 0.959876849736816,
+   "f1_lo": 0.951886498628593,
+   "f1_hi": 0.9669021029391022,
+   "doc_em_pct": 64.0
+  }
+ },
+ "worst_fields": [
+  {
+   "field": "email.meeting.start",
+   "tp": 82,
+   "fp": 18,
+   "fn": 54,
+   "f1": 0.6949152542372882
+  },
+  {
+   "field": "resume.location",
+   "tp": 230,
+   "fp": 6,
+   "fn": 76,
+   "f1": 0.8487084870848709
+  },
+  {
+   "field": "resume.experience[].end",
+   "tp": 651,
+   "fp": 7,
+   "fn": 92,
+   "f1": 0.9293361884368309
+  },
+  {
+   "field": "resume.experience[].start",
+   "tp": 807,
+   "fp": 15,
+   "fn": 101,
+   "f1": 0.9329479768786128
+  },
+  {
+   "field": "resume.experience[].title",
+   "tp": 835,
+   "fp": 19,
+   "fn": 99,
+   "f1": 0.9340044742729307
+  },
+  {
+   "field": "resume.experience[].is_current",
+   "tp": 795,
+   "fp": 15,
+   "fn": 87,
+   "f1": 0.9397163120567376
+  },
+  {
+   "field": "resume.experience[].company",
+   "tp": 816,
+   "fp": 19,
+   "fn": 81,
+   "f1": 0.9422632794457275
+  },
+  {
+   "field": "resume.education[].end_year",
+   "tp": 448,
+   "fp": 34,
+   "fn": 12,
+   "f1": 0.9511677282377919
+  },
+  {
+   "field": "email.meeting.location",
+   "tp": 103,
+   "fp": 9,
+   "fn": 0,
+   "f1": 0.958139534883721
+  },
+  {
+   "field": "resume.education[].school",
+   "tp": 450,
+   "fp": 26,
+   "fn": 4,
+   "f1": 0.967741935483871
+  },
+  {
+   "field": "resume.education[].degree",
+   "tp": 504,
+   "fp": 24,
+   "fn": 1,
+   "f1": 0.9757986447241046
+  },
+  {
+   "field": "resume.phone",
+   "tp": 311,
+   "fp": 0,
+   "fn": 12,
+   "f1": 0.9810725552050473
+  },
+  {
+   "field": "invoice.buyer.name",
+   "tp": 488,
+   "fp": 7,
+   "fn": 10,
+   "f1": 0.9828801611278952
+  },
+  {
+   "field": "email.date",
+   "tp": 373,
+   "fp": 6,
+   "fn": 6,
+   "f1": 0.9841688654353562
+  },
+  {
+   "field": "invoice.items[].amount",
+   "tp": 1525,
+   "fp": 22,
+   "fn": 22,
+   "f1": 0.9857789269553976
+  },
+  {
+   "field": "resume.skills[]",
+   "tp": 2756,
+   "fp": 68,
+   "fn": 7,
+   "f1": 0.9865759799534634
+  },
+  {
+   "field": "email.cc[].email",
+   "tp": 193,
+   "fp": 2,
+   "fn": 2,
+   "f1": 0.9897435897435898
+  },
+  {
+   "field": "invoice.items[].description",
+   "tp": 1608,
+   "fp": 15,
+   "fn": 15,
+   "f1": 0.9907578558225508
+  },
+  {
+   "field": "invoice.seller.tax_id",
+   "tp": 188,
+   "fp": 3,
+   "fn": 0,
+   "f1": 0.9920844327176781
+  },
+  {
+   "field": "resume.education[].field",
+   "tp": 310,
+   "fp": 2,
+   "fn": 1,
+   "f1": 0.9951845906902087
+  }
+ ]
+}
